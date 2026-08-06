@@ -15,3 +15,7 @@ El siguiente comando muestra el estado del repositorio Git:
 ```bash
 git status
 ```
+
+## Autor
+
+- Nombre: Juliana Arroyave Arango
