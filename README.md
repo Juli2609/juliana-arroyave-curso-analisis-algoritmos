@@ -1,3 +1,17 @@
 # Curso de Análisis de Algoritmos
 
-Repositorio para almacenar laboratorios, ejercicios y benchmarks del curso.
+Este repositorio contiene el material desarrollado durante el curso de Análisis de Algoritmos.
+
+## Estructura del repositorio
+
+- **laboratorios/**: almacena los informes y ejercicios de los laboratorios.
+- **ejercicios-clase/**: contiene las actividades realizadas durante las clases.
+- **benchmarks/**: guarda pruebas de rendimiento y comparaciones de algoritmos.
+
+## Ejemplo de uso
+
+El siguiente comando muestra el estado del repositorio Git:
+
+```bash
+git status
+```
