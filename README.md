@@ -19,3 +19,4 @@ git status
 ## Autor
 
 - Nombre: Juliana Arroyave Arango
+- Correo: julianaarroyave301009@correo.itm.edu.co
