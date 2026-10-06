@@ -9,11 +9,11 @@
 |---|---|
 | Corrección conceptual | 22 / 25 |
 | Calidad de la explicación teórica | 23 / 25 |
-| Corrección de la implementación | 12 / 20 |
+| Corrección de la implementación | 13 / 20 |
 | Calidad del análisis de las gráficas | 14 / 20 |
 | Documentación y organización del informe | 6 / 10 |
-| **Total** | **77 / 100** |
-| **Nota (0–5)** | **3.85** |
+| **Total** | **78 / 100** |
+| **Nota (0–5)** | **3.90** |
 
 ## 1. Corrección conceptual (22 / 25)
 **Lo que hizo bien:**
@@ -36,7 +36,7 @@
 **Lo que puede mejorar:**
 - En el conteo de insertion sort, algunas líneas se agruparon (por ejemplo 6, 7 y 8) y no se explica con calma cada una.
 
-## 3. Corrección de la implementación (12 / 20)
+## 3. Corrección de la implementación (13 / 20)
 **Lo que hizo bien:**
 - `insertion_sort` y `merge_sort` ordenan bien (de mayor a menor), no cambian la lista recibida y cuentan solo comparaciones entre elementos. El merge sort tiene su propia mezcla recursiva.
 - Los generadores dan listas sin repetidos, con semilla, y el escenario B sí deja el 2 % desordenado al final.
@@ -44,7 +44,6 @@
 **Lo que puede mejorar:**
 - `generar_casi_ordenado` usa `sorted()`. La rúbrica prohíbe esa función en el código entregado; podía armar la parte ordenada con `range` en orden inverso.
 - Faltan docstrings completos y tipos en `medir`, `medir_tiempo` y `main`, y `medir` tiene un `if/else` con las dos ramas iguales.
-- Los cuatro archivos `.py` terminan sin salto de línea final (falla menor de PEP 8).
 
 ## 4. Calidad del análisis de las gráficas (14 / 20)
 **Lo que hizo bien:**
@@ -73,5 +72,5 @@ Sí. Los scripts corren sin errores, ordenan bien los tres escenarios y generan 
 - Haga commits pequeños y frecuentes a medida que avanza (al menos uno por parte).
 - Evite `sorted()` en cualquier parte del código, también en los generadores de datos.
 - Muestre el cálculo de toda estimación: qué dato midió, por cuánto multiplica el tamaño y qué crecimiento supone.
-- Complete docstrings y tipos en todas las funciones y termine los archivos con salto de línea.
+- Complete docstrings y tipos en todas las funciones.
 - Respalde con cifras los datos que cita (como las 10 horas) y los argumentos de impacto ambiental.
