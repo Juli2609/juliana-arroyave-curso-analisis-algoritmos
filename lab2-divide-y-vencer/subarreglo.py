@@ -61,3 +61,34 @@ def suma_cruzada(
             fin_mejor = j
 
     return inicio_mejor, fin_mejor, mejor_izq + mejor_der
+
+
+def subarreglo_maximo(
+    valores: list[float], inicio: int, fin: int
+) -> tuple[int, int, float]:
+    """Encuentra la mejor racha por divide y venceras.
+
+    Args:
+        valores: variacion diaria de caja.
+        inicio: indice inicial del rango a considerar (inclusive).
+        fin: indice final del rango a considerar (inclusive).
+
+    Returns:
+        Una tupla (inicio, fin, suma) del mejor tramo dentro de
+        valores[inicio..fin].
+    """
+    # Caso base: un solo elemento, el unico tramo posible es el mismo.
+    if inicio == fin:
+        return inicio, fin, valores[inicio]
+
+    medio = (inicio + fin) // 2
+
+    # Dividir y conquistar: dos subproblemas de tamano n/2.
+    izquierdo = subarreglo_maximo(valores, inicio, medio)
+    derecho = subarreglo_maximo(valores, medio + 1, fin)
+
+    # Combinar: tramo que cruza el punto medio.
+    cruzado = suma_cruzada(valores, inicio, medio, fin)
+
+    # El mejor de los tres (comparando por la suma, indice 2).
+    return max(izquierdo, derecho, cruzado, key=lambda t: t[2])
