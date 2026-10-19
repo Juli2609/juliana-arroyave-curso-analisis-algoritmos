@@ -67,7 +67,7 @@ T(n) = 2T(n/2) + Θ(n), con a = 2, b = 2 y f(n) = n.
 
 Como n^(log₂2) = n y f(n) = Θ(n), ambos crecen igual. Aplica el caso 2 del método maestro y T(n) = Θ(n log n).
 
-En fuerza bruta, para cada inicio i el algoritmo recorre los j ≥ i acumulando la suma, y cada paso cuesta O(1). El número de pares es n(n+1)/2, así que T(n) = Θ(n²). n
+En fuerza bruta, para cada inicio i el algoritmo recorre los j ≥ i acumulando la suma, y cada paso cuesta O(1). El número de pares es n(n+1)/2, así que T(n) = Θ(n²).
 
 ### 2. Lo medido contra lo esperado
 
